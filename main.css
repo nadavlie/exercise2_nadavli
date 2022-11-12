@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+}
+.header {
+    grid-area: header;
+    background-color: #f0f2f5;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.signin {
+    grid-area: signin;
+    background-color: #f0f2f5;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #cadbfa;
+    width: 100px;
+}
+
+.content {
+    grid-area: content;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f0f2f5;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header signin'
+    'nav content content content content content'
+    'footer footer footer footer footer footer';
+    /*gap: 5px;*/
+    /*background-color: #2196F3;*/
+
+    /*width: 95vw;*/
+    height: 100vh;
+}
+
+.grid-container > div {
+    /*text-align: center;*/
+    /*padding: 20px 0;*/
+    font-size: 10px;
+}
+
+ul.vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #cadbfa;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    text-align: left;
+}
+
+ul.vertical li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+ul.vertical a.active {
+    background-color: #0489aac9;
+    color: white;
+}
+
+ul.vertical a:hover {
+    background-color: #7d9e92;
+    color: white;
+}
+
+.content div {
+    display: none;
+}
+
+
+div#nav div.favorite_book:target {
+    display: block;
+}
+
+div#nav div.place:target {
+    display: block;
+}
+
+/*div#tabs p {*/
+/*    !*display: none;*!*/
+/*}*/
+
+/*div#tabs div.tab1:target {*/
+/*    display: block;*/
+/*}*/
+
+/*div#tabs div.tab2:target {*/
+/*    display: block;*/
+/*}*/
+
+/*div#tabs div.tab3:target {*/
+/*    display: block;*/
+/*}*/
+
+/*div#tabs div.tab4:target {*/
+/*    display: block;*/
+/*}*/
+
+/*div#tabs div.tab5:target {*/
+/*    display: block;*/
+/*}*/
+
+div#tabs div {
+    display: block;
+}
+
+.verticalAligned {
+    display: flex;
+    align-items: center;
+}
+
+.headerTitle{
+    margin-left: 8px;
+}
+
+.float-right {
+    float: right;
+}
+
+#tabs div {
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 100%;
+}
+
+.feedbackForm {
+    /*display: grid;*/
+    /*grid-template-columns: 0.5fr 1fr;*/
+}
+.feedbackForm input {
+    border-radius: 10px;
+}
+
+.personalDetails {
+    display: grid !important;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.clickable {
+    cursor: pointer;
+}
